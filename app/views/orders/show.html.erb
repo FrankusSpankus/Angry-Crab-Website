@@ -1,0 +1,27 @@
+<div class="page-header">
+    <h1>Order #<%= @order.id %></h1>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <dl class="dl-horizontal">
+            <dt>First Name</dt>
+            <dd><%= @order.name %></dd>
+            
+            
+            <dt>Email</dt>
+            <dd><%= order.email %></dd>
+            
+            <dt>Phone</dt>
+            <dd><%= order.phone %></dd>
+            
+            <dt>Order Details</dt>
+            <dd><%= order.order_detail %></dd>
+            
+            <dt>PickUp Time</dt>
+            <dd><%= order.pickup_time %></dd>
+            
+        </dl>
+    </div>
+</div>
+<%end%>

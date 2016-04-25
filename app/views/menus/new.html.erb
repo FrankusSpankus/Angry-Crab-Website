@@ -1,0 +1,44 @@
+<% if @item.errors.present? %>
+    <p>The following error prevented your menu item from being saved.</p>
+    <ul>
+        <% @item.errors.full_messages.each do | message | %>
+        <li><%= message %></li>
+        <% end %>
+    </ul>
+<% end %>
+
+<%= form_tag(menus_path) do %>
+
+    <div class="block">
+        <label for="name">Item Name
+        <input type="text" id="name" name="name" placeholder="Item Name">
+        </label> <br> <br>
+    </div>
+    
+     <div class="block">
+        <label for="photo">Photo
+        <input type="text" id="photo" name="photo" placeholder="Photo" >
+        </label> <br> <br>
+    </div>
+    
+     <div class="block">
+        <label for="description">Description
+        <textarea type="text" id="description" name="description" placeholder="Description"> 
+        </textarea>
+        
+        </label> <br> <br>
+    </div>
+    
+     <div class="block">
+        <label for="price">Price
+        <input type="text" id="price" name="price" placeholder="Price" >
+        </label> <br> <br>
+    </div>
+    
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+
+<% end %>

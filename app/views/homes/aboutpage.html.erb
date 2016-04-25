@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                     <a class="navbar-brand" href="/home">Angry Crab</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/home">Home</a>
+                    </li>
+                    <li><a href="/menus">Menu</a>
+                    </li>
+                    <li  class="active"><a href="#about">About Us</a>
+                    </li>
+                    <li><a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+
+
+            <!-- Wrapper for slides -->
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <%= image_tag("s1.jpg", :alt => "seefood") %>
+                        
+                        <div class="container">
+                            <div class="carousel-caption">
+                                 <h1>About Us</h1>
+                                <p>Welcome to the Angry Crab About Us Page. We are a great California Cajun restaurant that has been serving delicious seafood by the pound for about 2 years now.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <%= image_tag("s2.jpg", :alt => "seefood") %>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                 <h1>About Us</h1>
+                                <p>Welcome to the Angry Crab About Us Page. We are a great California Cajun restaurant that has been serving delicious seafood by the pound for about 2 years now.<p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <%= image_tag("s3.jpg", :alt => "seefood") %>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                 <h1>About Us</h1>
+                                <p>Welcome to the Angry Crab About Us Page. We are a great California Cajun restaurant that has been serving delicious seafood by the pound for about 2 years now.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <</a>
+                         <a class="right carousel-control" href="#myCarousel" data-slide="next">></a>
+              <center>
+                  <h1>Our Story</h1>
+                  <p>We started off small and as a family started restaurant and with only one establishment on Lincoln Avenue in Chicago. We have delicious food and have grown in popularity exponentially.
+                   We are growing so fast that we plan on opening more Angry Crab Restaurants in other parts of Chicago.</p>
+              
+              
+              
+              
+              </center>
+            </div>
+            <center>
+                <div id="map">
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                    <div style='overflow:hidden;height:440px;width:1400px;'>
+                        <div id='gmap_canvas' style='height:440px;width:1400px;'></div>
+                        <div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small>
+                        </div>
+                        <div><small><a href="http://www.proxysitereviews.com/">proxies</a></small>
+                        </div>
+                        <style>
+                            #gmap_canvas img {
+                                max-width:none!important;
+                                background:none!important
+                            }
+                        </style>
+                    </div>
+                    <script type='text/javascript'>
+                        function init_map() {
+                            var myOptions = {
+                                zoom: 15,
+                                center: new google.maps.LatLng(41.9845824, -87.69715930000001),
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                            marker = new google.maps.Marker({
+                                    map: map,
+                                    position: new google.maps.LatLng(41.9845824, -87.69715930000001)
+                                });
+                            infowindow = new google.maps.InfoWindow({
+                                    content: '<strong>Angry Crab - Chicago</strong><br>5665 N Lincoln Ave, Chicago, IL 60659<br>'
+                                });
+                            google.maps.event.addListener(marker, 'click', function() {
+                                infowindow.open(map, marker);
+                            });
+                            infowindow.open(map, marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+                </div>
+            </center>
+
+            <footer>
+                <div id="footer">
+                    <div class="row">
+                        <div class="col-sm-4">
+                             <h2 align="center">Angry Crab &copy;</h2>
+                            <center>
+                                <%= image_tag("angry.jpg", :alt => "seefood", :width => "200") %>
+                            </center>
+                        </div>
+                        <div class="col-sm-4">
+                             <h2 align="center">5665 N Lincoln Ave, Chicago, IL 60659</h2>
+                             <h2 align="center">Call Us: (773) 784-6848</h2>
+                        </div>
+                        <div class="col-sm-4">
+                            <center>
+                                <a href="https://www.instagram.com/angrycrabchicago">
+                                    <%= image_tag("fb.png", :alt => "seefood", :width => "100") %>
+                                </a>
+                                <a href="https://www.instagram.com/angrycrabchicago">
+                                    <%= image_tag("insta.png", :alt => "seefood", :width => "100") %>
+                                </a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+
+</html>

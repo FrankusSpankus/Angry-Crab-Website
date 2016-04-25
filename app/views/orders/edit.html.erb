@@ -1,0 +1,36 @@
+<div class="page-header">
+    <h1>Edit Order # <%= @item.id %></h1>
+</div>
+
+<%= form_tag(order_path(@item.id), :method => :patch) do %>
+<div class="block">
+    <label for="name">
+        Name: <input type="text" id="name" name="name" value=<%= @item.name %>>
+    </label><br /><br />
+</div>
+<div class="block">
+    <label for="phone">
+        Phone: <input type="text" id="phone" name="phone" value=<%= @item.phone %>>
+    </label><br /><br />
+</div>
+<div class="block">
+    <label for="email">
+        Email: <input type="text" id="email" name="email" value=<%= @item.email %>>
+    </label><br /><br />
+</div>
+<div class="block">
+    <label for="order_detail">
+        Order Details: <textarea name="order_detail" id="order_detail" ><%= @item.order_detail %></textarea>
+    </label><br /><br />
+</div>
+<div class="block">
+    <label for="pickup_time">
+        PickUp Time: <input type="text" id="pickup_time" name="pickup_time" value=<%= @item.pickup_time %>>
+    </label><br /><br />
+</div>
+
+<button type="button" class="btn btn-primary">
+    <a href="/orders">Back</a>
+</button>
+<input type="submit"><br />
+<% end %>

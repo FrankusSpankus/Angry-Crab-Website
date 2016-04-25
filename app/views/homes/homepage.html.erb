@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                     <a class="navbar-brand" href="/home">Angry Crab</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a>
+                    </li>
+                    <li><a href="/menus">Menu</a>
+                    </li>
+                    <li><a href="/about">About Us</a>
+                    </li>
+                    <li><a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+
+
+            <!-- Wrapper for slides -->
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <%= image_tag("s1.jpg", :alt => "seefood") %>
+                        
+                        <div class="container">
+                            <div class="carousel-caption">
+                                 <h1>Angry Crab</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <%= image_tag("s2.jpg", :alt => "seefood") %>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                 <h1>Angry Crab</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <%= image_tag("s3.jpg", :alt => "seefood") %>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                 <h1>Angry Crab</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <</a>
+                         <a class="right carousel-control" href="#myCarousel" data-slide="next">></a>
+            </div>
+            <br />
+             <h1 align="center"><i>~~~~~~~~~~~~~~~~~~~~~~~~~Menu~~~~~~~~~~~~~~~~~~~~~~~</i></h1>
+            <div id="box">
+                 <h2>Appe-Teaser</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <ul>
+                            <li>
+                                <p class="menuitem"><b><i>Regular Fries</i></b>
+                                </p>
+                                <p><b><i>$4.00</i></b>
+                                </p>
+                            </li>
+                            <br />
+                            <li>
+                                <p class="menuitem"><b><i>Cajun Fries</i></b>
+                                </p>
+                                <p><b><i>$4.50</i></b>
+                                </p>
+                            </li>
+                            <br />
+                            <li>
+                                <p class="menuitem"><b><i>Garlic Fries</i></b>
+                                </p>
+                                <p><b><i>$5.50</i></b>
+                                </p>
+                            </li>
+                            <br />
+                            <li>
+                                <p class="menuitem"><b><i>Chicken Tenders and Fries</i></b>
+                                </p>
+                                <p><b><i>$8.00</i></b>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul>
+                            <li>
+                                <p class="menuitem"><b><i>Cajun-Garlic Fries</i></b>
+                                </p>
+                                <p><b><i>$6.00</i></b>
+                                </p>
+                            </li>
+                            <br />
+                            <li>
+                                <p class="menuitem"><b><i>Garlic Noodles</i></b>
+                                </p>
+                                <p><b><i>$8.00</i></b>
+                                </p>
+                            </li>
+                            <br />
+                            <li>
+                                <p class="menuitem"><b><i>Angry Wings(6 pc)</i></b>
+                                </p>
+                                <p><b><i>$7.00</i></b>
+                                </p>
+                                <p class="special">Lemon, Garlic, Spicy, or Angry(Cajun)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul>
+                            <li>
+                                <p class="menuitem"><b><i>Fried Calamari</i></b>
+                                </p>
+                                <p><b><i>$8.00</i></b>
+                                </p>
+                            </li>
+                            <br />
+                            <li>
+                                <p class="menuitem"><b><i>Fried or Raw Oysters(6pc/12pc)</i></b>
+                                </p>
+                                <p><b><i>$10.00/$16.00</i></b>
+                                </p>
+                            </li>
+                            <br />
+                            <li>
+                                <p class="menuitem"><b><i>Fish and Chips</i></b>
+                                </p>
+                                <p><b><i>$10.00</i></b>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                 <h2>Lets Get Crackin'</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <ul>
+                            <li>
+                                <p class="menuitem"><b><i>Crawfish Fresh</i></b>
+                                </p>
+                                <p><b><i>$MP/LB</i></b>
+                                </p>
+                            </li>
+                            <br/>
+                            <li>
+                                <p class="menuitem"><b><i>Whole Shrimp</i></b>
+                                </p>
+                                <p><b><i>$MP/LB</i></b>
+                                </p>
+                            </li>
+                            <br/>
+                            <li>
+                                <p class="menuitem"><b><i>Headless Shrimp</i></b>
+                                </p>
+                                <p><b><i>$MP/LB</i></b>
+                                </p>
+                            </li>
+                            <br/>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul>
+                            <li>
+                                <p class="menuitem"><b><i>Clams</i></b>
+                                </p>
+                                <p><b><i>$MP/LB</i></b>
+                                </p>
+                            </li>
+                            <br>
+                            <li>
+                                <p class="menuitem"><b><i>Blue Crab(Seasonal)</i></b>
+                                </p>
+                                <p><b><i>$MP/LB</i></b>
+                                </p>
+                            </li>
+                            <br>
+                            <li>
+                                <p class="menuitem"><b><i>Dungeness Crab(Seasonal)</i></b>
+                                </p>
+                                <p><b><i>$MP/LB</i></b>
+                                </p>
+                            </li>
+                            <br>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul>
+                            <li>
+                                <p class="menuitem"><b><i>King Crab Legs(Seasonal)</i></b>
+                                </p>
+                                <p><b><i>$MP/LB</i></b>
+                                </p>
+                            </li>
+                            <br>
+                            <li>
+                                <p class="menuitem"><b><i>Snow Crab Legs(Seasonal)</i></b>
+                                </p>
+                                <p><b><i>$MP/LB</i></b>
+                                </p>
+                            </li>
+                            <br>
+                            <li>
+                                <p class="menuitem"><b><i>Lobster(Seasonal)</i></b>
+                                </p>
+                                <p><b><i>$MP/LB</i></b>
+                                </p>
+                            </li>
+                            <br>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <center>
+                <div id="map">
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                    <div style='overflow:hidden;height:440px;width:1400px;'>
+                        <div id='gmap_canvas' style='height:440px;width:1400px;'></div>
+                        <div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small>
+                        </div>
+                        <div><small><a href="http://www.proxysitereviews.com/">proxies</a></small>
+                        </div>
+                        <style>
+                            #gmap_canvas img {
+                                max-width:none!important;
+                                background:none!important
+                            }
+                        </style>
+                    </div>
+                    <script type='text/javascript'>
+                        function init_map() {
+                            var myOptions = {
+                                zoom: 15,
+                                center: new google.maps.LatLng(41.9845824, -87.69715930000001),
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                            marker = new google.maps.Marker({
+                                    map: map,
+                                    position: new google.maps.LatLng(41.9845824, -87.69715930000001)
+                                });
+                            infowindow = new google.maps.InfoWindow({
+                                    content: '<strong>Angry Crab - Chicago</strong><br>5665 N Lincoln Ave, Chicago, IL 60659<br>'
+                                });
+                            google.maps.event.addListener(marker, 'click', function() {
+                                infowindow.open(map, marker);
+                            });
+                            infowindow.open(map, marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+                </div>
+            </center>
+
+            <footer>
+                <div id="footer">
+                    <div class="row">
+                        <div class="col-sm-4">
+                             <h2 align="center">Angry Crab &copy;</h2>
+                            <center>
+                                <%= image_tag("angry.jpg", :alt => "seefood", :width => "200") %>
+                            </center>
+                        </div>
+                        <div class="col-sm-4">
+                             <h2 align="center">5665 N Lincoln Ave, Chicago, IL 60659</h2>
+                             <h2 align="center">Call Us: (773) 784-6848</h2>
+                        </div>
+                        <div class="col-sm-4">
+                            <center>
+                                <a href="https://www.instagram.com/angrycrabchicago">
+                                    <%= image_tag("fb.png", :alt => "seefood", :width => "100") %>
+                                </a>
+                                <a href="https://www.instagram.com/angrycrabchicago">
+                                    <%= image_tag("insta.png", :alt => "seefood", :width => "100") %>
+                                </a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+
+</html>
